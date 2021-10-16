@@ -1,10 +1,10 @@
 package springdemo;
 
-import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class NameFormController {
@@ -22,9 +22,8 @@ public class NameFormController {
 	}
 	
 	@RequestMapping("/processForm2")
-	public String processForm2(HttpServletRequest request , Model model)
+	public String processForm2(@RequestParam("Name") String name, Model model)
 	{
-		String name = request.getParameter("Name");
 		name=name.toUpperCase();
 		model.addAttribute("Name",name);
 		return "process-form2";
