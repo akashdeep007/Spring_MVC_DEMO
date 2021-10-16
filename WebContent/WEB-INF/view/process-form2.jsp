@@ -4,12 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Show Form</title>
+<title>Insert title here</title>
 </head>
 <body>
-<form action="processForm2" method="get">
-<input id="Name" name="Name" type="text" placeholder="Type Your Name Here">
-<input type="submit">
-</form>
+Student Name : ${Name}
 </body>
 </html>
