@@ -21,6 +21,9 @@ Country :  <form:select path="country">
 Favourite Language : 
 <form:radiobuttons path="favouriteLanguage" items="${student.favoriteLanguageOptions }" />
 <br><br>
+Favourite Operating System :
+<form:checkboxes items="${student.favoriteOperatingSystemsOptions}" path="favouriteOperatingSystems"/>
+<br><br>
 <input type="submit" />
 
 </form:form>
