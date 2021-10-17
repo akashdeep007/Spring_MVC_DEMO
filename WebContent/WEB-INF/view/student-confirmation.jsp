@@ -8,6 +8,9 @@
 </head>
 <body>
 First Name : ${student.firstName}
+<br><br>
 Last Name : ${student.lastName}
+<br><br>
+Country : ${student.country}
 </body>
 </html>
