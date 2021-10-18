@@ -12,5 +12,8 @@ First Name : ${customer.firstName}
 <br><br>
 Last Name : ${customer.lastName}
 <br><br>
+No Of Passes : ${customer.noOfPasses}
+<br><br>
+Pincode : ${customer.pincode}
 </body>
 </html>
