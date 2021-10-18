@@ -26,6 +26,9 @@ No Of Passes : <form:input path="noOfPasses"/>
 Pincode : <form:input path="pincode"/>
 <form:errors path="pincode" cssClass="error"></form:errors>
 <br><br>
+Ticket Code : <form:input path="ticketCode"/>
+<form:errors path="ticketCode" cssClass="error"></form:errors>
+<br><br>
 <input type="submit" />
 
 </form:form>

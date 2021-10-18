@@ -15,5 +15,7 @@ Last Name : ${customer.lastName}
 No Of Passes : ${customer.noOfPasses}
 <br><br>
 Pincode : ${customer.pincode}
+<br><br>
+Ticket Code : ${customer.ticketCode}
 </body>
 </html>
