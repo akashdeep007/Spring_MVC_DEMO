@@ -14,9 +14,10 @@ public class Customer {
 	@Size(min=1,message = "is required")
 	private String lastName;
 	
+	@NotNull(message = "is required")
 	@Min(value = 1, message = "Greater than or equal to 1")
 	@Max(value = 10, message = "Less than or equal to 10")
-	private int noOfPasses;
+	private Integer noOfPasses;
 	
 	@Pattern(regexp = "^[1-9][0-9]{5}$",message = "Pincode should not start with 0 and should be of 6 digits")
 	private String pincode;
@@ -33,10 +34,10 @@ public class Customer {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public int getNoOfPasses() {
+	public Integer getNoOfPasses() {
 		return noOfPasses;
 	}
-	public void setNoOfPasses(int noOfPasses) {
+	public void setNoOfPasses(Integer noOfPasses) {
 		this.noOfPasses = noOfPasses;
 	}
 	public String getPincode() {
